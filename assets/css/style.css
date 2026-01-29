@@ -61,14 +61,16 @@ body {
 /* SECTION 1: HEADER (Responsive Grid) */
 .app-header {
     display: flex;
-    flex-direction: column; /* Mobile First: Stack */
+    flex-direction: row;
+    align-items: center;
     padding-top: 24px;
 }
 
 .header-icon-container {
-    margin-bottom: 24px;
+    margin-bottom: 0;
+    margin-right: 16px;
     display: flex;
-    justify-content: center; /* Mobile: Center icon */
+    justify-content: flex-start;
 }
 
 .app-icon-frame {
@@ -104,6 +106,7 @@ body {
 .header-details {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .app-title {
