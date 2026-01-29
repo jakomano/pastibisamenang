@@ -1,50 +1,45 @@
-# Pasti Bisa Menang
+# Pasti Bisa Menang - Landing Page
 
-Selamat datang di repository resmi **Pasti Bisa Menang**. Project ini adalah landing page untuk aplikasi "Pasti Bisa Menang".
+Repository ini berisi kode sumber untuk landing page aplikasi **Pasti Bisa Menang**.
+Halaman ini dirancang untuk mendistribusikan file APK secara aman dan profesional melalui **GitHub Pages**.
 
-## Deskripsi
+## Fitur Utama
 
-"Pasti Bisa Menang" adalah aplikasi mobile yang dirancang untuk memberikan pengalaman bermain yang seru dan menantang. Repository ini berisi kode sumber untuk landing page statis yang digunakan untuk mendistribusikan aplikasi kepada pengguna.
+- **Hosting Aman:** Menggunakan infrastruktur GitHub Pages.
+- **Download Terverifikasi:** File APK diunduh langsung dari [GitHub Releases](https://github.com/jakomano/pastibisamenang/releases).
+- **Fallback System:** Menyediakan link alternatif jika download utama gagal.
+- **Mobile First:** Desain responsif yang optimal untuk perangkat Android.
 
-## Download Aplikasi
+## Informasi Hosting
 
-Aplikasi (APK) **tidak disimpan secara langsung di dalam folder repository ini**, melainkan tersedia melalui fitur **GitHub Releases**.
+- **URL Landing Page:** (Akan aktif setelah deployment ke GitHub Pages)
+- **Lokasi APK:** GitHub Releases `v1.0.0`
+- **Nama File APK:** `PastiBisaMenang.apk`
 
-- **Versi Saat Ini:** v1.0.0
-- **Lokasi Download:** [Halaman Releases](https://github.com/jakomano/pastibisamenang/releases)
-
-Pengguna dapat mengunduh file `.apk` langsung dari landing page yang telah disediakan (GitHub Pages) atau melalui tab Releases di repository ini.
-
-## Struktur Repository
+## Struktur Project
 
 ```
 /
-├── index.html          # Halaman utama landing page
+├── index.html          # Halaman utama (Hero, CTA, Info Keamanan)
 ├── assets/
 │   ├── css/
-│   │   └── style.css   # Styling halaman (Mobile-first)
+│   │   └── style.css   # Styling profesional & clean (Blue theme)
 │   ├── js/
-│   │   └── main.js     # Logika interaksi sederhana
-│   └── images/         # Aset gambar
+│   │   └── main.js     # Logika download & fallback UI
+│   └── images/         # (Kosong/Reserved)
 └── README.md           # Dokumentasi ini
 ```
 
-## Cara Update APK
+## Cara Update APK (Tanpa Edit Kode)
 
-Untuk memperbarui aplikasi ke versi terbaru:
+Untuk memperbarui aplikasi ke versi baru tanpa mengubah kode landing page secara manual, ikuti langkah ini:
 
-1.  **Jangan** upload file APK ke dalam folder kode (`assets` atau lainnya).
-2.  Pergi ke halaman **Releases** di GitHub.
-3.  Buat **New Release** (Draft a new release).
-4.  Tag version baru (misal: `v1.1.0`).
-5.  Upload file APK baru ke release tersebut.
-6.  Update link download di file `index.html` agar mengarah ke file APK versi terbaru di release yang baru dibuat.
-    ```html
-    <!-- Update bagian ini di index.html -->
-    <a href="https://github.com/jakomano/pastibisamenang/releases/download/v1.1.0/nama-file-baru.apk" ...>
-    ```
-7.  Commit dan Push perubahan `index.html` ke branch `main`.
+1.  Buka tab **Releases** di repository GitHub.
+2.  Buat **Release Baru**.
+3.  **PENTING:** Pastikan nama file APK yang diupload **TETAP SAMA**, yaitu:
+    `PastiBisaMenang.apk`
+4.  Jika Anda ingin menggunakan nama file berbeda atau versi spesifik, Anda harus mengedit `assets/js/main.js` pada bagian `CONFIG.primaryUrl`.
 
 ## Lisensi
 
-&copy; 2024 Pasti Bisa Menang.
+&copy; 2024 Pasti Bisa Menang. All rights reserved.
