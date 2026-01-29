@@ -60,15 +60,16 @@ body {
 
 /* SECTION 1: HEADER (Responsive Grid) */
 .app-header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 64px 1fr;
     align-items: center;
+    column-gap: 16px;
     padding-top: 24px;
 }
 
 .header-icon-container {
     margin-bottom: 0;
-    margin-right: 16px;
+    margin-right: 0;
     display: flex;
     justify-content: flex-start;
 }
@@ -422,19 +423,18 @@ body {
 /* Desktop Media Query */
 @media (min-width: 768px) {
     .app-header {
-        flex-direction: row; /* Desktop: Row */
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        align-items: center;
+        column-gap: 16px;
     }
 
     .header-details {
-        flex: 1;
-        order: 2; /* Right of icon */
         padding-right: 0;
-        padding-left: 24px;
+        padding-left: 0;
     }
 
     .header-icon-container {
-        order: 1; /* Left */
         margin-bottom: 0;
         justify-content: flex-start;
     }
