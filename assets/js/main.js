@@ -43,9 +43,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Manual Trigger
     downloadBtn.addEventListener('click', performDownload);
-
-    // Auto Download Trigger (with slight delay to ensure page load)
-    setTimeout(() => {
-        performDownload();
-    }, 1500);
 });
