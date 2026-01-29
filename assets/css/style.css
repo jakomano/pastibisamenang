@@ -1,7 +1,7 @@
 /* Reset & Base Styles */
 :root {
-    --primary-color: #01875f; /* Play Store Green-ish */
-    --primary-dark: #00694a;
+    --primary-color: #1e8e3e; /* Google Play Green */
+    --primary-dark: #137333;
     --text-color: #202124;
     --text-secondary: #5f6368;
     --divider-color: #e8eaed;
@@ -26,7 +26,7 @@ body {
 /* Layout Container */
 .app-container {
     width: 100%;
-    max-width: 960px; /* Standard desktop width constraint */
+    max-width: 1100px; /* Desktop width constraint */
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -82,8 +82,8 @@ body {
 }
 
 .app-icon {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
     background-color: #e8f0fe;
     color: var(--primary-color);
     border-radius: 16px; /* Rounded square */
@@ -96,8 +96,8 @@ body {
 }
 
 .app-icon-img {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
     border-radius: 16px; /* Rounded square */
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
     object-fit: cover;
@@ -111,7 +111,7 @@ body {
 
 .app-title {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 4px;
     color: var(--text-color);
     line-height: 2rem;
@@ -204,7 +204,7 @@ body {
     color: white;
     border: none;
     border-radius: 9999px;
-    padding: 12px 24px;
+    padding: 14px 28px;
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0.25px;
@@ -327,6 +327,7 @@ body {
     flex-shrink: 0;
     border: 1px solid var(--divider-color);
     object-fit: cover;
+    box-shadow: 0 2px 8px rgba(60,64,67,0.15);
 }
 
 .ec-icon {
@@ -438,31 +439,18 @@ body {
         justify-content: flex-start;
     }
 
-    .app-icon {
-        width: 120px;
-        height: 120px;
-        font-size: 2rem;
-        border-radius: 24px;
-    }
-
-    .app-icon-frame {
-        border-radius: 24px;
-    }
-
-    .app-icon-img {
-        width: 120px;
-        height: 120px;
-        border-radius: 24px;
-    }
+    .app-icon { width: 64px; height: 64px; border-radius: 16px; }
+    .app-icon-frame { border-radius: 16px; }
+    .app-icon-img { width: 64px; height: 64px; border-radius: 16px; }
 
     .app-title {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
     }
 
     .btn-install {
         width: auto;
-        padding: 12px 48px;
+        padding: 14px 40px;
     }
 
     .screenshot-item, .screenshot-img {
