@@ -14,8 +14,9 @@
         <!-- SECTION 1: APP HEADER -->
         <header class="app-header">
             <div class="header-icon-container">
-                <!-- App Icon -->
-                <img src="assets/images/icon/icon.png" alt="Pasti Bisa Menang Icon" class="app-icon-img">
+                <div class="app-icon-frame">
+                    <img src="assets/images/icon/icon.png" alt="Pasti Bisa Menang Icon" class="app-icon-img">
+                </div>
             </div>
             
             <div class="header-details">
@@ -64,8 +65,22 @@
                 </div>
                 <div class="share-row">🔗 <span>Bagikan</span></div>
                 <div class="info-list">
-                    <div class="info-item">📱 <span>Aplikasi ini tersedia untuk semua perangkat Anda</span></div>
-                    <div class="info-item">🏠 <span>Dapat dibagikan ke keluarga melalui Family Library</span></div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="14" height="12" rx="2"></rect>
+                            <rect x="18" y="9" width="3" height="7" rx="1"></rect>
+                            <path d="M8 18h4"></path>
+                        </svg>
+                        <span>Aplikasi ini tersedia untuk semua perangkat Anda</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 10l9-7 9 7"></path>
+                            <path d="M5 10v9h14v-9"></path>
+                            <rect x="10" y="13" width="4" height="6" rx="1"></rect>
+                        </svg>
+                        <span>Dapat dibagikan ke keluarga melalui <a class="info-link" href="#">Family Library</a></span>
+                    </div>
                 </div>
             </div>
         </header>
