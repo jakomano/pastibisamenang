@@ -85,6 +85,14 @@ body {
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
 }
 
+.app-icon-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px; /* Rounded square */
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+    object-fit: cover;
+}
+
 .header-details {
     display: flex;
     flex-direction: column;
@@ -238,6 +246,15 @@ body {
     border: 1px solid var(--divider-color);
 }
 
+.screenshot-img {
+    height: 180px;
+    width: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border: 1px solid var(--divider-color);
+    object-fit: cover;
+}
+
 /* SECTION 3: ABOUT */
 .about-text {
     font-size: 0.875rem;
@@ -298,25 +315,18 @@ body {
 /* FOOTER */
 .app-footer {
     text-align: center;
-    padding: 24px;
+    padding: 32px 0;
     font-size: 0.75rem;
     color: var(--text-secondary);
-    border-top: 1px solid var(--divider-color);
-    margin-top: 24px;
 }
 
-/* ========================================= */
-/* DESKTOP LAYOUT (Media Query) */
-/* ========================================= */
+/* Desktop Media Query */
 @media (min-width: 768px) {
     .app-header {
         flex-direction: row; /* Desktop: Row */
         align-items: flex-start;
     }
 
-    /* Column 1 (Left in Play Store, but we can swap or keep logic) */
-    /* Play Store Desktop: Text Left, Icon Right. Let's match that. */
-    
     .header-details {
         flex: 1;
         order: 1; /* Left */
@@ -330,36 +340,29 @@ body {
     }
 
     .app-icon {
-        width: 140px; /* Larger icon on desktop */
-        height: 140px;
-        font-size: 3rem;
-        border-radius: 20%; /* Squircle */
+        width: 120px;
+        height: 120px;
+        font-size: 2rem;
+        border-radius: 24px;
+    }
+
+    .app-icon-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 24px;
     }
 
     .app-title {
-        font-size: 3rem; /* Huge title */
-        line-height: 3.5rem;
-        margin-bottom: 8px;
-    }
-
-    .app-publisher {
-        font-size: 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
     .btn-install {
-        width: auto; /* Auto width on desktop */
-        min-width: 160px;
+        width: auto;
+        padding: 12px 48px;
     }
 
-    .status-text {
-        text-align: left;
-        margin-left: 8px;
-        display: inline-block;
-    }
-
-    /* Screenshots */
-    .screenshot-item {
-        min-width: 160px;
-        height: 280px;
+    .screenshot-item, .screenshot-img {
+        height: 300px;
     }
 }
