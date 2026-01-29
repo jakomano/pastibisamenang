@@ -3,72 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasti Bisa Menang - Download Resmi</title>
-    <meta name="description" content="Download aplikasi resmi Pasti Bisa Menang. Aman, terverifikasi, dan di-host langsung di GitHub.">
+    <title>Pasti Bisa Menang - Detail Aplikasi</title>
+    <meta name="description" content="Detail aplikasi Pasti Bisa Menang. Versi 1.0.0. Diunduh langsung dari GitHub Releases.">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Menggunakan font system yang bersih untuk performa dan kesan native -->
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="app-title">Pasti Bisa Menang</h1>
-            <p class="app-description">
-                Aplikasi resmi untuk pengalaman bermain terbaik. <br>
-                Diunduh langsung dari server GitHub untuk keamanan Anda.
-            </p>
+    <main class="app-container">
+        
+        <!-- SECTION 1: APP HEADER -->
+        <header class="app-header">
+            <div class="header-icon-container">
+                <!-- Placeholder for App Icon (Rounded Square) -->
+                <div class="app-icon">
+                    <span>PB</span>
+                </div>
+            </div>
             
-            <div class="download-area">
-                <button id="downloadBtn" class="btn-primary">
-                    Download APK (v1.0.0)
-                </button>
+            <div class="header-details">
+                <h1 class="app-title">Pasti Bisa Menang</h1>
+                <div class="app-publisher">PastiBisa Dev</div>
                 
-                <!-- Area pesan status & fallback, tersembunyi secara default -->
-                <div id="statusArea" class="status-area hidden">
-                    <p class="status-text">Memproses permintaan download...</p>
+                <div class="app-stats-bar">
+                    <div class="stat-item">
+                        <span class="stat-value">4.6 <span class="star">★</span></span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                    <div class="stat-separator">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value">10K+</span>
+                        <span class="stat-label">Download</span>
+                    </div>
+                    <div class="stat-separator">|</div>
+                    <div class="stat-item">
+                        <span class="stat-value">Android</span>
+                        <span class="stat-label">Platform</span>
+                    </div>
                 </div>
 
-                <div id="fallbackArea" class="fallback-area hidden">
-                    <p class="fallback-message">
-                        Download tidak berjalan otomatis? 
-                    </p>
-                    <a href="https://github.com/jakomano/pastibisamenang/releases/latest/download/PastiBisaMenang.apk" class="btn-secondary">
-                        Download Alternatif (Latest)
-                    </a>
+                <div class="action-area">
+                    <button id="downloadBtn" class="btn-install">
+                        Install
+                    </button>
+                    <div id="statusArea" class="status-text hidden">Memulai download...</div>
+                    
+                    <div id="fallbackArea" class="fallback-box hidden">
+                        <p>Download tidak berjalan otomatis?</p>
+                        <a href="https://github.com/jakomano/pastibisamenang/releases/latest/download/PastiBisaMenang.apk" class="fallback-link">
+                            Klik di sini untuk download manual
+                        </a>
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <p class="security-note">
-                <small>🔒 Verified & Hosted on GitHub Releases</small>
+        <hr class="divider">
+
+        <!-- SECTION 2: SCREENSHOT PREVIEW -->
+        <section class="screenshots-section">
+            <h2 class="section-title">Pratinjau</h2>
+            <div class="screenshots-scroller">
+                <!-- Placeholder Screenshots -->
+                <div class="screenshot-item"></div>
+                <div class="screenshot-item"></div>
+                <div class="screenshot-item"></div>
+                <div class="screenshot-item"></div>
+                <div class="screenshot-item"></div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- SECTION 3: TENTANG APLIKASI -->
+        <section class="about-section">
+            <div class="section-header-row">
+                <h2 class="section-title">Tentang aplikasi ini</h2>
+                <span class="arrow-icon">→</span>
+            </div>
+            <p class="about-text">
+                Aplikasi hiburan yang dirancang untuk memberikan pengalaman bermain yang interaktif. 
+                Nikmati berbagai fitur menarik dalam satu genggaman.
             </p>
-        </div>
-    </header>
+            <ul class="feature-list">
+                <li>• Antarmuka pengguna yang responsif dan mudah digunakan.</li>
+                <li>• Performa ringan dan optimal untuk berbagai perangkat Android.</li>
+                <li>• Update berkala untuk peningkatan stabilitas.</li>
+            </ul>
+        </section>
 
-    <!-- Security Info Section -->
-    <section class="info-section">
-        <div class="container">
-            <div class="info-card">
-                <h3>ℹ️ Informasi Keamanan Android</h3>
-                <p>
-                    Saat menginstal aplikasi ini, Anda mungkin melihat peringatan keamanan dari Android. 
-                    <strong>Ini adalah hal yang normal</strong> untuk semua aplikasi yang diunduh di luar Google Play Store.
-                </p>
-                <ul class="security-steps">
-                    <li>Aplikasi ini 100% aman dan bebas malware.</li>
-                    <li>File di-host langsung di infrastruktur GitHub.</li>
-                    <li>Jika diminta, izinkan instalasi dari sumber ini di pengaturan HP Anda.</li>
-                </ul>
+        <hr class="divider">
+
+        <!-- SECTION 4: KEAMANAN & TEKNIS -->
+        <section class="data-safety-section">
+            <h2 class="section-title">Informasi & Keamanan</h2>
+            <div class="safety-card">
+                <div class="safety-item">
+                    <div class="safety-icon">🛡️</div>
+                    <div class="safety-content">
+                        <strong>Sumber Terverifikasi</strong>
+                        <p>File APK ini di-host langsung di infrastruktur GitHub Releases (v1.0.0).</p>
+                    </div>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">ℹ️</div>
+                    <div class="safety-content">
+                        <strong>Catatan Instalasi</strong>
+                        <p>Peringatan keamanan Android adalah hal normal untuk aplikasi di luar Play Store. Pastikan izin instalasi aktif.</p>
+                    </div>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">⚙️</div>
+                    <div class="safety-content">
+                        <strong>Versi 1.0.0</strong>
+                        <p>Diperbarui pada 2024</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer / Final CTA -->
-    <footer class="footer">
-        <div class="container">
-            <p>Pastikan Anda hanya mengunduh dari halaman ini.</p>
-            <p class="copyright">&copy; 2024 Pasti Bisa Menang.</p>
-        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2024 Pasti Bisa Menang.</p>
     </footer>
 
     <script src="assets/js/main.js"></script>
