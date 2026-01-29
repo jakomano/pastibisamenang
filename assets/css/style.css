@@ -112,7 +112,7 @@ body {
 .app-title {
     font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     color: var(--text-color);
     line-height: 2rem;
 }
@@ -136,16 +136,19 @@ body {
 .app-stats-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 24px;
     font-size: 0.875rem;
     color: var(--text-secondary);
+    gap: 8px;
 }
 
 .stat-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 12px;
+    padding: 0 8px;
 }
 
 .stat-item:first-child { padding-left: 0; }
@@ -178,21 +181,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .chip {
     background-color: var(--card-bg);
     border: 1px solid var(--divider-color);
     border-radius: 9999px;
-    padding: 6px 12px;
+    padding: 6px 10px;
     font-size: 0.75rem;
     color: var(--text-secondary);
 }
 
 /* Action Area (Button & Fallback) */
 .action-area {
-    margin-top: 8px;
+    margin-top: 12px;
     width: 100%;
 }
 
