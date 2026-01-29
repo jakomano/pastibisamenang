@@ -113,6 +113,13 @@ body {
     margin-bottom: 16px;
 }
 
+.meta-sub {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-top: -12px;
+    margin-bottom: 16px;
+}
+
 .app-stats-bar {
     display: flex;
     align-items: center;
@@ -156,6 +163,22 @@ body {
     font-weight: 300;
 }
 
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.chip {
+    background-color: var(--card-bg);
+    border: 1px solid var(--divider-color);
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
 /* Action Area (Button & Fallback) */
 .action-area {
     margin-top: 8px;
@@ -166,10 +189,10 @@ body {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 8px;
-    padding: 10px 24px;
+    border-radius: 9999px;
+    padding: 12px 24px;
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.25px;
     width: 100%; /* Mobile: Full width */
     cursor: pointer;
@@ -216,6 +239,29 @@ body {
 
 .fallback-link:hover {
     text-decoration: underline;
+}
+
+.share-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin: 12px 0 4px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 /* SECTION 2: SCREENSHOTS */
