@@ -23,6 +23,71 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* NAVBAR (Google Play Style) */
+.google-play-nav {
+    height: 64px;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--divider-color);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 24px; /* Default padding matches container */
+}
+
+.nav-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.gp-logo-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.gp-logo-text {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #5f6368;
+    letter-spacing: -0.5px;
+    font-family: 'Product Sans', 'Roboto', sans-serif; /* Attempt Product Sans look */
+    line-height: 1;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #01875f; /* Default User Color */
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335); /* Abstract user avatar */
+    opacity: 0.8;
+}
+
 /* Layout Container */
 .app-container {
     width: 100%;
